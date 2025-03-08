@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "MX2",
+   Name = "Mapple X2",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Mapple X2",
    LoadingSubtitle = "Universal Script 📌",
@@ -34,4 +34,4 @@ local Window = Rayfield:CreateWindow({
 })
 
 -- // Player Gui // --
-local Player = Window:CreateTab("Player 👤", "rewind")
+local Player = Window:CreateTab("Player", "user")
