@@ -61,6 +61,8 @@ local JumpSlider = PlayerTab:CreateSlider({
    end,
 })
 
+local Divider = PlayerTab:CreateDivider()
+
 local Button = PlayerTab:CreateButton({
    Name = "Reset",
    Callback = function()
@@ -68,3 +70,5 @@ SpeedSlider:Set(16) -- The new slider integer value
 JumpSlider:Set(50) -- The new slider integer value
    end,
 })
+
+local Divider = PlayerTab:CreateDivider()
