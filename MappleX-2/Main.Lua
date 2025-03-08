@@ -73,7 +73,7 @@ JumpSlider:Set(50) -- The new slider integer value
 
 local Section = PlayerTab:CreateSection("Control")
 
-local Button = Tab:CreateButton({
+local Button = PlayerTab:CreateButton({
    Name = "Jump",
    Callback = function()
       game.Players.LocalPlayer.Character.Humanoid.Jump = true
@@ -82,7 +82,7 @@ local Button = Tab:CreateButton({
 
 -- // Button Divider
 
-local Button = Tab:CreateButton({
+local Button = PlayerTab:CreateButton({
    Name = "Sit",
    Callback = function()
       game.Players.LocalPlayer.Character.Humanoid.Sit = true
