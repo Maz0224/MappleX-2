@@ -79,7 +79,6 @@ local Button = PlayerTab:CreateButton({
       game.Players.LocalPlayer.Character.Humanoid.Jump = true
    end,
 })
-
 -- // Button Divider
 
 local Button = PlayerTab:CreateButton({
