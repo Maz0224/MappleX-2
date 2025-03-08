@@ -87,3 +87,12 @@ local Button = PlayerTab:CreateButton({
       game.Players.LocalPlayer.Character.Humanoid.Sit = true
    end,
 })
+
+local Toggle = PlayerTab:CreateToggle({
+   Name = "Auto Rotate",
+   CurrentValue = true,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+         game.Players.LocalPlayer.Character.Humanoid.AutoRotate = Value
+   end,
+})
