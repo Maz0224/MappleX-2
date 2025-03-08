@@ -37,7 +37,7 @@ local Window = Rayfield:CreateWindow({
 local PlayerTab = Window:CreateTab("Player", "user")
 local Section = PlayerTab:CreateSection("Movement")
 
-local Slider = PlayerTab:CreateSlider({
+local SpeedSlider = PlayerTab:CreateSlider({
    Name = "Walk Speed",
    Range = {0, 1000},
    Increment = 1,
@@ -49,7 +49,7 @@ local Slider = PlayerTab:CreateSlider({
    end,
 })
 
-local Slider = PlayerTab:CreateSlider({
+local JumpSlider = PlayerTab:CreateSlider({
    Name = "Jump Power",
    Range = {0, 1000},
    Increment = 1,
@@ -58,5 +58,13 @@ local Slider = PlayerTab:CreateSlider({
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
       game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value	
+   end,
+})
+
+local Button = PlayerTab:CreateButton({
+   Name = "Reset",
+   Callback = function()
+SpeedSlider:Set(36) -- The new slider integer value
+JumpSlider:Set(50) -- The new slider integer value
    end,
 })
