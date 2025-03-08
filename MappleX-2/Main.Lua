@@ -42,7 +42,7 @@ local SpeedSlider = PlayerTab:CreateSlider({
    Range = {0, 1000},
    Increment = 1,
    Suffix = "Speed",
-   CurrentValue = 36,
+   CurrentValue = 16,
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value	
@@ -64,7 +64,7 @@ local JumpSlider = PlayerTab:CreateSlider({
 local Button = PlayerTab:CreateButton({
    Name = "Reset",
    Callback = function()
-SpeedSlider:Set(36) -- The new slider integer value
+SpeedSlider:Set(16) -- The new slider integer value
 JumpSlider:Set(50) -- The new slider integer value
    end,
 })
